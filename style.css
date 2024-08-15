@@ -1,0 +1,439 @@
+:root{
+    /* light mode colors */
+    --text-color:black;
+    --bg-color:white;
+    border-color: black;
+    /* dark mode colors */
+    --color-dark: rgb(5, 18, 32);
+    --color-light:white;
+    --box-shadow: 4px -2px 4px 9px lightgrey;
+
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    margin: 0;
+    /* color: black; */
+}
+
+.navbar{ 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    padding:16px 32px;
+    top:0;
+    position: relative;
+    color: black;
+}
+
+.logo-name{
+    font-weight: bolder;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.line{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: red;
+    margin: 0 12px;
+}
+ 
+.logo-container{
+    gap: 8px;
+    align-items: center;
+}
+
+.nav-items{
+    gap: 12px;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items a:hover{
+    color:blue;
+}
+/* wrapper container */
+.wrapper-container{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    padding: 32px;
+    color: var(--text-color);
+    padding: 24px;
+
+}
+
+/* hero section */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.hero-section{
+    background-color: red;
+    border-radius: 12px;
+    margin: 4rem;
+}
+
+.intro-text{
+    color: bisque;
+    padding: 8px;
+}
+
+.download-btn{
+    background-color: black;
+    color: whitesmoke;
+    border: 12px;
+    border-radius: 24px;
+    padding: 8px;
+}
+
+.download-btn:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.image-grid-item{
+    margin: -1rem 0;
+
+}
+
+.image-grid-item img{
+    height: 100%;
+    width: 80%;
+}
+
+/* summary section */
+
+#summary{
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 16px;
+    justify-content: space-around;
+    color: red;
+    border-radius: 24px;
+    display: flex;
+}
+
+
+#summary i{
+    font-size: 2rem;
+    color: black;
+}
+
+#summary p{
+    margin: 0;
+    color: red;
+}
+
+.border-horizontal{
+    color: black;
+    padding: 12px;
+}
+
+.vertical-line{
+    font-size: 32px;
+    color: black;
+}
+
+/* skills section */
+
+.skills-container{
+    justify-content: space-evenly;
+    margin: 4rem;
+    text-align: center;
+}
+
+.skills-container i{
+    font-size: 36px;
+}
+
+.skills-container :nth-child(1) i{
+    color: red;
+}
+
+.skills-container :nth-child(2) i{
+    color: blue;
+}
+
+.skills-container :nth-child(3) i{
+    color: rgb(194, 194, 39);
+}
+
+.skills-container :nth-child(4) i{
+    color: lightskyblue;
+}
+
+.skills-container :nth-child(5) i{
+    color: black;
+}
+
+/* recent work section */
+
+.flex-container{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recent-work-card{
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    width: 200px;
+    height: 250px;
+    border-radius: 12px;
+    color: black;
+}
+
+.card-image{
+    width: 100%;
+    height: 60%;
+    background-color: blue;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-icons{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.recent-work-card h4,p{
+    padding: 0 12px;
+    margin: 0;
+}
+
+/* about me section */
+
+.about-me-section{
+    background-color: aqua;
+    margin: 16px -40px;
+    padding: 12px;
+}
+
+.about-me-container{
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: grey;
+}
+
+.about-me-container img{
+    width: auto;
+    height: 150px;
+}
+
+.flex{
+   display: flex;
+   gap: 1rem;
+   font-weight: bold;
+}
+
+.tag{
+    font-weight: bolder;
+}
+
+/* contact section */
+
+.contact{
+    padding-top: 7rem 0;
+    width: 400px;
+    margin: auto;
+    margin-top: 5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.social{
+    font-size: 4rem;
+    justify-content: space-between;
+    color: black;
+}
+
+.contact h3{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.contact .email-section{
+    background: black;
+    color: azure;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    gap: 3rem;
+    box-shadow: var(--box-shadow);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.contact .email-section span{
+    font-size: 1rem;
+}
+.flex-center{
+
+}
+.contact .email-section i{
+    background: orange;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* footer section */
+
+footer{
+    min-height: 30vh;
+    background: black;
+    color: aliceblue;
+    margin-top: 5rem;
+    /* flex-direction: column; */
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+footer .top-flex{
+    margin-bottom: 5rem;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .top ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+footer .top ul li{
+    line-height: 1.5rem;
+}
+
+/* go to top */
+
+.go-to-top{
+   width: 50px;
+   height: 50px;
+   border-radius: 50px;
+   background-color: red;
+   color: white;
+   line-height: 50px;
+   text-align: center;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+}
+
+.go-to-top a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* dark mode */
+
+.dark-mode-toggle{
+    position: fixed;
+    top: 7rem;
+    left: 8px;
+}
+
+.dark-mode-toggle:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 0.3s;
+    color: rgb(131, 16, 16); 
+      
+}
+
+#dark-mode{
+    display: none;
+}
+
+
+#dark-mode:checked~header{
+    --bg-color:var(--color-dark);
+    color: white;
+
+}
+#dark-mode:checked~.wrapper-container{
+    --bg-color:var(--color-dark);
+    --border-color: var(--border-color);
+    --text-color:var(--color-light);
+    
+    
+    
+}
+
+/* hamburger menu */
+
+#hamburger-menu{
+    display: none;
+}
+
+[for="hamburger-menu"]{
+    display: none;
+}
+
+.side-menu{
+    display: none;
+}
+
+/* responsive design */
+
+@media (max-width: 760px){
+    .side-menu{
+        display: block;
+        position: absolute;
+        top: 4rem;
+        left: 100vw;
+        width: 250px;
+        background-color: var(--bg-color);
+        transition: left 0.5s;
+        box-shadow: var(--box-shadow);
+        border-radius: 12px;
+    }
+
+    .side-nav-items{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #hamburger-menu:checked+.side-menu{
+        left: calc(100vw-250px);
+    }
+}
+
+.bottom{
+    justify-content: center;
+    text-align: center;
+}
