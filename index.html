@@ -9,67 +9,71 @@
 </head>
 <body>
   <!-- dark toggle mode -->
+  <input type="checkbox" id="dark-mode"/>
+
 <label for="dark-mode" class="dark-mode-toggle">
     <i class="fa-solid fa-circle-half-stroke"></i>
 </label>
-<input type="checkbox" id="dark-mode">
+<!-- ---------------------- -->
+
+
 
 <!-- header -->
  <header>
     <!-- navbar -->
-     <nav>
-        <div class="flex-container navbar">
+     <nav class="navbar">
             <div class="flex-container logo-container">
                 <div class="logo-name">Bhagwan</div>
-                <div class="line">|</div>
-                <div class="job">Soft. Engineer</div>
+                <span class="line">|</span>
+                <div class="job">Software Engineer</div>
 
             </div>
-            <ul class="flex-container nav-items">
+            <div class="flex-container nav-items">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            </div>
+
             <!-- hamburger menu -->
-             <label for="hamburger-menu">
-                <i class="fa-solid fa-bars"></i>
-             </label>
-             <input type="checkbox" id="hamburger-menu">
-             <div class="side-menu">
-                <ul  class="side-nav-items">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<label for="hamburger-menu">
+    <i class="fa-solid fa-bars"></i>
+</label>
+<input type="checkbox" id="hamburger-menu"/>
+<div class="side-menu">
+    <ul class="side-nav-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
 
-                </ul>
-
-             </div>
-
-        </div>
      </nav>
  </header>
 
  <div class="wrapper-container">
+
     <!-- hero section -->
-     <section id="home">
-        <div>
-            <div class="grid-container hero-section">
+        <section id="home">
+            <div className="grid hero">
+            <div class="hero-section">
                 <div class="intro-text">
                     <p>
-                        "Hi. I am "
+                        "Hi. I am 
                         <b>Bhagwan</b>
-                        "."
+                        .
                     </p>
                     <p>
                         <b>Software Engineer</b>
-                        "."
+                        ."
                     </p>
                     <br>
-                    <a href >
+                    <a href="./assets/a.jpg" download>
                         <button class="download-btn">
                             "download CV"
                             <i class="fa-solid fa-download">
@@ -80,14 +84,13 @@
 
                 </div>
                 <div class="image-grid-item">
-                    <img src="assets/c.jpg"  alt="Portfolio">
+                    <img src="assets/c.jpg"  alt="Portfolio"/>
 
                 </div>
 
             </div>
-        </div>
-
-     </section>
+            
+        </section>
 
      <!-- summary section -->
       <section id="summary">
@@ -121,9 +124,13 @@
 
       </section>
 
+
       <!-- skill section -->
        <section id="skills">
-        <div class="flex-container skills-container">
+           <center>
+              <h2>Skills</h2>
+            </center>
+         <div class="flex-container skills-container">
             <div>
                 <i class="fa-brands fa-html5"></i>
                 <p>HTML</p>
@@ -141,11 +148,11 @@
                 <p>REACT</p>
             </div>
             <div>
-                <i class="fa-brands fa-square-github"></i>
-                <p>GITHUB</p>
+                <i class="fa-brands fa-github"></i>                <p>GITHUB</p>
             </div>
         </div>
        </section>
+
 
        <!-- my recent work -->
         <section id="projects">
@@ -249,30 +256,35 @@
 
         <!-- about me -->
 
-        <section  class="about-me-container" id="about">
+        <section  class="about-me-section" id="about">
             <center>
                 <h2>About Me</h2>
             </center>
             <div class="flex-container about-me-container">
                 <div class="about-me-container img">
-                    <img src="assets/b (1).jpg" alt="profile">
+                    <img src="assets/c.jpg" alt="profile">
 
                 </div>
+               
                 <div class="bio-container">
-                    <h4>Bhagwan</h4>
-                    <p>
-                        I am a student.I am learing code.   I am a student.I am learing code.   I am a student.I am learing code.   I am a student.I am learing code.
+                    <h4> Bhagwan Ghartri Magar</h4>
+                    <p>Hello! I'm Bhagwan, a passionate MERN stack developer with a love for creating dynamic and responsive web applications. With a background in Information Technology, I have honed my skills in MongoDB, Express.js, React, and Node.js to build robust full-stack solutions that deliver seamless user experiences.</p>
+
+                    <p>Driven by a desire to solve complex problems, I thrive in collaborative environments and enjoy tackling new challenges. My journey into web development began through a coding bootcamp and since then, I’ve worked on several projects that have helped me grow as a developer.</p>
+                        
+                    <p>I believe in the power of technology to make a positive impact, and I am committed to continuous learning and improvement in my craft. When I'm not coding, you can find me exploring the latest tech trends.
                     </p>
                     <p>Sydney, Australia</p>
                     <br>
                     <br>
-                    <div class="tag">Interest</div>
+                    <div class="tag">Interest:</div>
                     <div class="flex">
                         <span>Coding</span>
                         <span>Football</span>
                         <span>Movies</span>
                     </div>
                 </div>
+              
             </div>
 
         </section>
@@ -283,32 +295,33 @@
                 <span>Get In Touch</span>
             </h2>
             <div class="flex social">
-                <a href>
+                <a href="https://www.linkedin.com/in/bhagwan-gharti-magar-5762901a5/">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href>
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href>
+                <a  href="https://github.com/Bhagwan06">
+                    <i class="fa-brands fa-github"></i>                 </a>
+                <a href="https://www.youtube.com/@bhagwanghartimagar6242">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href>
-                    <i class="fa-brands fa-mobile"></i>
+                <a href="https://www.facebook.com/WorldOfBhagwan">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
             <h3>OR</h3>
             <div class="flex-center">
-                <a href class="email-section flex-center"><span>magarbhagwan66@gmail.com 
+                <a href="mailto:magarbhagwan66@gmail.com" class="email-section flex-center">
+                    <span>magarbhagwan66@gmail.com 
                 </span>
                 <i class="fa-regular fa-paper-plane"></i></a>
             </div>
          </section>
+
          <!-- footer section -->
 
          <footer class="flex-center">
             <div class="top-flex">
                 <div class="links">
-                   <h3>links</h3>
+                   <h3>Links</h3>
                    <ul>
                     <li>
                         <a href="#home">Home</a>
@@ -329,22 +342,22 @@
                     <h3>Social Links</h3>
                     <ul>
                         <li>
-                            <a href>Linkden</a>
+                            <a href="https://www.linkedin.com/in/bhagwan-gharti-magar-5762901a5/">Linkden</a>
                         </li>
                         <li>
-                            <a href>Github</a>
+                            <a href="https://github.com/Bhagwan06">Github</a>
                         </li>
                         <li>
-                            <a href>Facebook</a>
+                            <a href="https://www.facebook.com/WorldOfBhagwan">Facebook</a>
                         </li>
                         <li>
-                            <a href>Youtube</a>
+                            <a href="https://www.youtube.com/@bhagwanghartimagar6242">Youtube</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="bottom">
-                "&copy Copy right all reserved 2024 || Made by me :) "
+                &copy Copy right all reserved 2024 || Made by Bhagwan :) 
             </div>
 
          </footer>
