@@ -7,7 +7,6 @@ This is my personal portfolio website where I showcase my skills, recent project
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 
 
 ## Features
@@ -42,13 +41,5 @@ To run this project locally, follow these steps:
 2. **Navigation**: Click the hamburger icon on smaller screens to open the side navigation menu.
 3. **Contact Form**: Fill out the form in the contact section to send a message.
 
-## Project Structure
-```
-portfolio-html-css/
-├── index.html          # Main HTML file
-├── style.css           # Main CSS file
-├── script.js           # JavaScript file for interactivity
-├── images/             # Folder containing image assets
-└── README.md           # README file
-```
+
 
